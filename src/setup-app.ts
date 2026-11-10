@@ -48,7 +48,7 @@ export function setupApp(app: NestExpressApplication) {
     origin: origins.length ? origins : !isProd,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'token', 'tenantId'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'token', 'tenantId', 'ngrok-skip-browser-warning'],
   });
 
   app.enableShutdownHooks();
